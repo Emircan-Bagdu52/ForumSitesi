@@ -23,21 +23,21 @@ namespace MvcProjeKampi.Controllers
         [HttpGet]
         public ActionResult AddHeading()
         {
-            List<SelectListItem>valuecategory=(from x in cm.GetList()
-                                               select new SelectListItem
-                                               {
-                                                   Text=x.CategoryName,
-                                                   Value=x.CategoryID.ToString()
-                                               }).ToList();
-
-            List<SelectListItem> valuewriter = (from x in wm.GetList()
+            List<SelectListItem> valuecategory = (from x in cm.GetList()
                                                   select new SelectListItem
                                                   {
-                                                      Text = x.WriterName+" "+x.WriterSurname,
-                                                      Value = x.WriterID.ToString()
+                                                      Text = x.CategoryName,
+                                                      Value = x.CategoryID.ToString()
                                                   }).ToList();
 
-            ViewBag.vlc=valuecategory;
+            List<SelectListItem> valuewriter = (from x in wm.GetList()
+                                                select new SelectListItem
+                                                {
+                                                    Text = x.WriterName + " " + x.WriterSurname,
+                                                    Value = x.WriterID.ToString()
+                                                }).ToList();
+
+            ViewBag.vlc = valuecategory;
             ViewBag.vwn = valuewriter;
 
 
@@ -46,9 +46,36 @@ namespace MvcProjeKampi.Controllers
         [HttpPost]
         public ActionResult AddHeading(Heading heading)
         {
-            heading.HeadingDate= DateTime.Parse(DateTime.Now.ToShortDateString());
+            heading.HeadingDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             hm.HeadingAdd(heading);
             return RedirectToAction("Index", "Heading");
+        }
+        [HttpGet]
+        public ActionResult EditHeading(int id)
+        {
+            List<SelectListItem> valuecategory = (from x in cm.GetList()
+                                                  select new SelectListItem
+                                                  {
+                                                      Text = x.CategoryName,
+                                                      Value = x.CategoryID.ToString()
+                                                  }).ToList();
+            ViewBag.vlc = valuecategory;
+            var values = hm.GetById(id);
+            return View(values);
+        }
+        [HttpPost]
+        public ActionResult EditHeading(Heading heading)
+        {
+            hm.HeadingUpdate(heading);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult DeleteHeading(int id)
+        {
+            var value=hm.GetById(id);
+            value.HeadingStatus = false;
+            hm.HeadingDelete(value);
+            return RedirectToAction("Index");
         }
     }
 }

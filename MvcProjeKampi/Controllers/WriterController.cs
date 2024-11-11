@@ -41,9 +41,8 @@ namespace MvcProjeKampi.Controllers
                 {
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
-
-                return RedirectToAction("Index");
             }
+            return View();
         }
         [HttpGet]
         public ActionResult EditWriter(int id)
