@@ -18,5 +18,7 @@
     @Html.Label("Yazar")
     @Html.DropDownListFor(x => x.WriterID, (List<SelectListItem>)ViewBag.vwn, new { @class = "form-control" })
     <br />
+    @Html.ValidationMessageFor(x=>x.WriterID)
+    <br />
     <button class="btn btn-info">Başlık Ekle</button>
 }

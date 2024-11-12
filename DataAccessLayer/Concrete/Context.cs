@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿using Entity.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -17,5 +18,7 @@ namespace DataAccessLayer.Concrete
 		public DbSet<Heading> Headings { get; set; }
 		public DbSet<Writer> Writers { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<ImageFile> ImageFiles { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }
