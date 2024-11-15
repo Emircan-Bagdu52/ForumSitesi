@@ -1,5 +1,6 @@
 ﻿using EntityLayer.Concrete;
 using FluentValidation;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,10 @@ namespace BusinessLayer.ValidationRules
 
 
         }
-    }
+
+		public static ValidationResult Validate(Writer writer)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }
