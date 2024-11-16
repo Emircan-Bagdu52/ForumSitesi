@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Entity.Concrete
+namespace EntityLayer.Concrete
 {
     public class Admin
     {

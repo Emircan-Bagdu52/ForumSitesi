@@ -20,7 +20,12 @@ namespace MvcProjeKampi.Controllers
             var values = hm.GetList();
             return View(values);
         }
-        [HttpGet]
+		public ActionResult HeadingReport()
+		{
+			var values = hm.GetList();
+			return View(values);
+		}
+		[HttpGet]
         public ActionResult AddHeading()
         {
             List<SelectListItem> valuecategory = (from x in cm.GetList()

@@ -39,6 +39,7 @@ namespace MvcProjeKampi.Controllers
             }
 
         }
+        [HttpGet]
         public ActionResult WriterLogin()
         {
             return View();
