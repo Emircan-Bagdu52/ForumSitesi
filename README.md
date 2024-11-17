@@ -3,17 +3,18 @@ Bu proje, Ekşi Sözlük'ten ilham alınarak geliştirilmiş bir web uygulaması
 
 Projemizde Yazar, Kullanıcı ve Yönetici olmak üzere üç farklı rol bulunmaktadır. Gelecekte bu roller, Editör gibi yeni yetkilendirmelerle genişletilebilecek şekilde tasarlanmıştır.
 
-🚀 Kullanılan Teknolojiler ve Özellikler
-🛠️ Mimari ve Prensipler
-N Katmanlı Mimari:
-Kodun düzenli, ölçeklenebilir ve yönetilebilir olmasını sağlar.
-Generic Repository Design Pattern:
-Veritabanı işlemleri için kullanılmıştır; kod tekrarını azaltır, bakım kolaylığı sunar.
-Nesne Yönelimli Programlama (OOP):
-Polimorfizm ve kalıtım prensipleri sayesinde esnek ve yeniden kullanılabilir bir yapı.
-Katmanlı Mimari Üzerinde Dependency Injection:
-Kodun daha test edilebilir ve bağımsız olması sağlanmıştır.
-⚡ Teknolojiler ve Araçlar
+<h1>🚀 Kullanılan Teknolojiler ve Özellikler</h1>
+<h2>🛠️ Mimari ve Prensipler</h2>
+
+N Katmanlı Mimari : Kodun düzenli, ölçeklenebilir ve yönetilebilir olmasını sağlar.
+
+Generic Repository Design Pattern: Veritabanı işlemleri için kullanılmıştır; kod tekrarını azaltır, bakım kolaylığı sunar.
+
+Nesne Yönelimli Programlama (OOP): Polimorfizm ve kalıtım prensipleri sayesinde esnek ve yeniden kullanılabilir bir yapı.
+
+Katmanlı Mimari Üzerinde Dependency Injection: Kodun daha test edilebilir ve bağımsız olması sağlanmıştır.
+
+<h2>⚡ Teknolojiler ve Araçlar</h2>
 ASP.NET Core Identity:
 Kullanıcı kimlik doğrulama ve yetkilendirme mekanizmaları.
 Data Annotations ile Validasyon:
@@ -22,15 +23,15 @@ DTO (Data Transfer Object):
 Veri transferi performansını optimize eden veri taşıma yapıları.
 LINQ:
 Veritabanı işlemlerinde kullanılmıştır, güçlü ve okunabilir sorgular oluşturulmasını sağlar.
-🎨 Kullanıcı Deneyimi
+<h2>🎨 Kullanıcı Deneyimi</h2>
 Bootstrap Tema:
 Modern ve kullanıcı dostu bir tasarım için özel Bootstrap teması kullanılmıştır.
 Resim & Dosya Yükleme:
 Kullanıcıların içeriklerini destekleyen bir dosya yükleme özelliği eklenmiştir.
-🔒 Güvenlik
+<h2>🔒 Güvenlik</h2>
 Authentication & Authorization:
 Kullanıcı yetkilendirme ve kimlik doğrulama işlemleri tam güvenlik sağlamaktadır.
-📂 Proje Yapısı
+<h2>📂 Proje Yapısı</h2>
 Projemiz, N Katmanlı Mimari prensiplerine göre yapılandırılmıştır.
 
 Entities Katmanı:
