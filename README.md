@@ -46,12 +46,13 @@ Repository'yi Klonlayın:
 
 
 <h1>🌟 Proje Görselleri</h1>
-📸 Ana Sayfa
-![Ana Sayfa1](https://github.com/user-attachments/assets/48667ca4-e438-451f-8ad0-2ff2be071e64)!
+<h2>📸 Ana Sayfa</h2>
+
+![Ana Sayfa1](https://github.com/user-attachments/assets/48667ca4-e438-451f-8ad0-2ff2be071e64)
 ![404HataSayfası](https://github.com/user-attachments/assets/4b8d3bb0-d6ba-470a-ae27-d687b56312bc)
 
 
-📸 Yazar Paneli
+<h2>📸 Yazar Paneli</h2>
 ![Writer_Yazılarım](https://github.com/user-attachments/assets/a2ec016c-1d08-451d-aa4a-7de2def4b5c2)
 ![Writer_Profilim](https://github.com/user-attachments/assets/1129019f-9314-4b64-b79b-bf94ae2aa752)
 ![writer_gönderilenmesajlar](https://github.com/user-attachments/assets/d5d60ff9-8f54-4eb5-9da4-8f5a5e91f4af)
@@ -59,7 +60,7 @@ Repository'yi Klonlayın:
 ![Writer_GelenMesajlar](https://github.com/user-attachments/assets/299379c9-4cf1-48d5-ac50-da90ab6af7fb)
 ![Writer_Başlıklarım](https://github.com/user-attachments/assets/472e8da3-99ce-4821-b170-cee486dde857)
 
-📸 Admin Paneli
+<h2>📸 Admin Paneli</h2>
 ![AdminYazılar](https://github.com/user-attachments/assets/f5ca5679-90d4-44a7-9c29-7352289aa953)
 ![AdminYazarlar](https://github.com/user-attachments/assets/125b9d86-4b65-4064-a000-55ee5495e307)
 ![AdminRaporlar](https://github.com/user-attachments/assets/0a629241-2384-44af-9fec-ad13bc79a790)
