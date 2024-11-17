@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Abstract;
 using DataAccessLayer.Concrete.Repositories;
-using Entity.Concrete;
+using EntityLayer.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {

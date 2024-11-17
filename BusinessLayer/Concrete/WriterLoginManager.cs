@@ -4,7 +4,7 @@ using DataAccess.Abstract;
 using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 
-namespace Business.Concrete
+namespace BusinessLayer.Concrete
 {
     public class WriterLoginManager : IWriterLoginService
     {

@@ -1,7 +1,6 @@
-﻿using Business.Concrete;
+﻿using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
-using Entity.Concrete;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;

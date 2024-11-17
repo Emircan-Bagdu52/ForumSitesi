@@ -29,8 +29,14 @@ namespace MvcProjeKampi.Controllers
             abm.AboutAdd(about);
             return RedirectToAction("Index");
         }
+		[HttpPost]
+		public ActionResult DeleteAbout(About about)
+		{
+			abm.AboutDelete(about);
+            return RedirectToAction("Index");
+		}
 
-        public PartialViewResult AboutPartial()
+		public PartialViewResult AboutPartial()
         {
             return PartialView();
         }

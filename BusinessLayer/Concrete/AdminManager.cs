@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Business.Abstract;
 using DataAccess.Abstract;
-using Entity.Concrete;
 using EntityLayer.Concrete;
 
 namespace Business.Concrete
